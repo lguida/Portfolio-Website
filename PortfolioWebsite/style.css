@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+h1, h2, h3{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p, ul, ol{
+  font-family: Helvetica, sans-serif;
+}
+/* this add the header image. I still want to center the image when the screen is small and make the title centered in the middle of the image. I think modules later in the course will help with this*/
+header {
+  background-image: url("images/cactus.jpg");
+  /*display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;*/
+  background-size: cover;
+  position: relative;
+  min-height: 500px;
+  width: 100%;
+  height: 601px;
+  display: block;
+  justify-content: center;
+  /* margin: auto;
+  width: 100%;
+  height: 100%;*/
+}
+/*These make the content center in the middle as one column*/
+.center-column{
+  margin: 0 150px 30px 150px;
+}
+/* these make the heading bigger */
+h1 {
+  font-size: 68px;
+  color: #FE5F55;
+  /*margin: 300px 0 0 0;*/
+}
+h2 {
+  font-size: 30px;
+}
+/* these add the background boxes
+I'm hoping to make them spread across the screen and be responsive but I suspect material later in the course will help with that.*/
+#contact{
+  background: #F0B67F;
+  padding: 10px 100px 10px 100px;
+}
+#about{
+  background: #C7EFCF;
+  padding: 10px 100px 10px 100px;
+}
+#info{
+  background: #EEF5DB;
+  padding: 10px 100px 10px 100px;
+}
+/* styling footer image
+TODO: curretly it is centered, but I'd like to make it span the bottom and be flexible. haven't entirely decided how to do that yet.*/
+img {
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* link pseudo-classes */
+a:link    { color: #FE5F55;  }
+a:visited { color: #C7EFCF;   }
+a:hover   { color: #D6D1B1; }
+a:active  { color: #EEF5DB;  }
